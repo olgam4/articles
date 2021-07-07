@@ -2,8 +2,6 @@
 
 <img src="https://github.com/olgam4/articles/blob/main/testing/better-testing/thought-catalog-mmWqrsjZ4Lw-unsplash.jpg " width="100%" alt="It seems way more relaxing to read this than to read some tests I wrote two years ago whilst learning TDD in uni.">
 
-https://github.com/olgam4/articles/blob/main/testing/better-testing/910Uj-uTAcL._SX600_.jpg
-
 Have you ever heard that tests are supposed to "pilot your development"; you should think about your desired outcome, make sure your new functionality will work as intended and *only* then are you going to implement it. That's what *TDD* is supposed to be.
 
 Depending upon context, you’ll have your code interacting with something. Since your test should only be asserting one functionality is working, you don’t want your test to fail because of some context which has changed. If you’ve heard about the “Given When Then” strategy to testing, then you’ll know that our Given is the current state of our application. Sometimes, this boiler is incredibly tedious and different with every test you’re encountering.
