@@ -2,7 +2,7 @@
 
 <img src="https://github.com/olgam4/articles/blob/main/testing/better-testing/thought-catalog-mmWqrsjZ4Lw-unsplash.jpg " width="100%" alt="It seems way more relaxing to read this than to read some tests I wrote two years ago whilst learning TDD in uni.">
 
-Have you ever heard that tests are supposed to "drive your development" (thus the name test-*driven* development): you should think about your desired outcome, make sure your new functionality will work as intended and *only* then are you going to implement it. That's what *TDD* is supposed to be.
+Have you ever heard that tests are supposed to "drive your development" (thus the name test-*driven* development): you should think about your desired outcome, make sure your new functionality will work as intended and *only* then are you going to implement it. That's what *TDD* is supposed to be. And… What if I told you that you could even upgrade your tests to more easily drive your development?
 
 More often than not, your code will be interacting with something else, whether it be an API, some underlying techno or something entirely different. Since your test should only be asserting that the one functionality your working on is behaving, you don’t want your test to fail because of some exterior context which has changed, or more to the point: if the context hasn't changed, but its implementation has. If you’ve heard about the “Given When Then” strategy to testing, then you’ll know that our `Given` is the current state of our application. Sometimes, this becomes a boiler which is incredibly tedious and is bound to be different for almost every test along the way.
 
@@ -262,4 +262,3 @@ We could imagine that the `QuoteBuilder` uses `Generators` to randomize its sett
 
 Special thanks to:
 [Rescue Heroes on Amazon Prime](https://www.amazon.com/Rescue-Heroes-Season-1-US/dp/B01MYWOO25)
-[Unsplash](https://unsplash.com/)
