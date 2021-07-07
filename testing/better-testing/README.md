@@ -220,7 +220,7 @@ There you go! You now have a car with the added benefit that on the day that any
 
 As I said earlier, it is now a great idea to run your tests more than one. If you see some tests failing once every five times because of randomness, be happy you caught it before it failed in production!
 
-## Bravo! You did it
+## Bravo! You did it ✨🥳
 
 In the end, we've accomplished our main quest: reading our test is now that much easier. To top it all off, we can now easily change the way we instantiate the object we're testing, change its contructor signature and we won't have to refactor our whole code base. Also, our tests are now randomized and may help us catch flaky tests...If you still are not convinced, let me share with you a horrible example.
 
