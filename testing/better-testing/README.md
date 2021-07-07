@@ -1,6 +1,6 @@
 # A Neat Trick to Easily Upgrade the Readibility of Your Unit Tests
 
-<img src="https://github.com/olgam4/articles/blob/main/testing/better-testing/thought-catalog-mmWqrsjZ4Lw-unsplash.jpg " width="100" alt="It seems way more relaxing to read this than to read some tests I wrote two years ago whilst learning TDD in uni.">
+<img src="https://github.com/olgam4/articles/blob/main/testing/better-testing/thought-catalog-mmWqrsjZ4Lw-unsplash.jpg " width="700" alt="It seems way more relaxing to read this than to read some tests I wrote two years ago whilst learning TDD in uni.">
 
 Have you ever heard that tests are supposed to "pilot your development"; you should think about your desired outcome, make sure your new functionality will work as intended and *only* then are you going to implement it. That's what *TDD* is supposed to be.
 
