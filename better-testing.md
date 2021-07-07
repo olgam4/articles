@@ -9,10 +9,10 @@ Depending upon context, you’ll have your code interacting with something. Sinc
 ```java
 @Test
 givenARunningCar_whenStopping_thenEngineStops()
-    String name = "Bertha"
+    Year builtIn = new Year(1990)
     Engine engine = new WorkingEngine();
     List<Passenger> passagers = new ArrayList();
-    Car car = new Car(name, engine, passengers);
+    Car car = new Car(builtIn, engine, passengers);
     car.start();
 
     car.stop();
@@ -22,7 +22,7 @@ givenARunningCar_whenStopping_thenEngineStops()
 
 @Test
 givenAFaultyEngineAndARunningCar_whenStopping_thenCarExplodes()
-    String name = "Bertha"
+    Year builtIn = new Year(1990)
     Engine faultyEngine = new FaultyEngine();
     List<Passenger> passagers = new ArrayList();
     Car car = new Car(name, faultyEngine, passengers);
@@ -45,7 +45,7 @@ Here they come to the rescue: builders. Finished are those times in which you ha
 
 ```java
 public class CarBuilder {
-    private String name = "Bertha"
+    private Year buildYear = new Year(1990);
     private Engine engine = new WorkingEngine();
 	private List<Passenger> passengers = new ArrayList<>();
     
@@ -55,6 +55,11 @@ public class CarBuilder {
         return new CarBuilder();
     }
     
+    public CarBuilder withBuildYear(Year year) {
+        this.buildYear = year;
+        return this;
+    }
+    
     public CarBuilder withPassengers(Passenger passenger) {
         this.passengers.add(passenger)
         return this;
@@ -62,10 +67,11 @@ public class CarBuilder {
     
     public CarBuilder withEngine(Engine engine) {
         this.engine = engine;
+        return this;
     }
     
     public static Car build() {
-        return new Car(name, engine, passengers);
+        return new Car(buildYear, engine, passengers);
     }
 }
 ```
@@ -113,19 +119,19 @@ public class CarGenerator {
         return ArrayList<>();
     }
     
-    public static String createName() {
-        return "Bertha";
+    public static Year createYear() {
+        return new Year(1990);
     }
 }
 ```
 
 ```java
 public class CarBuilder {
-    private final String BASE_NAME = createName()
+    private final Year BASE_YEAR = createYear()
     private final Engine BASE_ENGINE = createEngine()
 	private final List<Passenger> BASE_PASSENGERS = createPassengers()
     
-    private String name = BASE_NAME;
+    private Year buildYear = BASE_YEAR;
     private Engine name = BASE_ENGINE;
     private List<Passenger> passengers = BASE_PASSENGERS;
     
@@ -133,6 +139,11 @@ public class CarBuilder {
     
     public static CarBuilder aCar() {
         return new CarBuilder();
+    }
+    
+    public CarBuilder withBuildYear(Year year) {
+        this.buildYear = year;
+        return this;
     }
     
     public CarBuilder withPassengers(Passenger passenger) {
@@ -181,8 +192,8 @@ public class CarGenerator {
         return PassengerGenerator.create();
     }
     
-    public static String createName() {
-        return Faker.instance().name().firstName();
+    public static Year createYear() {
+        return new Year(Faker.instance().number().numberBetween(1900, 2022);
     }
 }
 ```
