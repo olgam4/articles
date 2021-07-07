@@ -1,5 +1,7 @@
 # A Neat Trick to Easily Upgrade the Readibility of Your Unit Tests
 
+![Reading a book](/thought-catalog-mmWqrsjZ4Lw-unsplash.jpg)
+
 Have you ever heard that tests are supposed to "pilot your development"; you should think about your desired outcome, make sure your new functionality will work as intended and *only* then are you going to implement it. That's what *TDD* is supposed to be.
 
 Depending upon context, you’ll have your code interacting with something. Since your test should only be asserting one functionality is working, you don’t want your test to fail because of some context which has changed. If you’ve heard about the “Given When Then” strategy to testing, then you’ll know that our Given is the current state of our application. Sometimes, this boiler is incredibly tedious and different with every test you’re encountering.
