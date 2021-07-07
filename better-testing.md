@@ -9,10 +9,10 @@ Depending upon context, you’ll have your code interacting with something. Sinc
 ```java
 @Test
 givenARunningCar_whenStopping_thenEngineStops()
-    Year builtIn = new Year(1990)
+    Year buildYear = new Year(1990)
     Engine engine = new WorkingEngine();
     List<Passenger> passagers = new ArrayList();
-    Car car = new Car(builtIn, engine, passengers);
+    Car car = new Car(buildYear, engine, passengers);
     car.start();
 
     car.stop();
@@ -22,10 +22,10 @@ givenARunningCar_whenStopping_thenEngineStops()
 
 @Test
 givenAFaultyEngineAndARunningCar_whenStopping_thenCarExplodes()
-    Year builtIn = new Year(1990)
+    Year buildYear = new Year(1990)
     Engine faultyEngine = new FaultyEngine();
     List<Passenger> passagers = new ArrayList();
-    Car car = new Car(name, faultyEngine, passengers);
+    Car car = new Car(buildYear, faultyEngine, passengers);
     car.start();
 
     assertThrows(CarExplosion.class, () -> {
@@ -60,13 +60,13 @@ public class CarBuilder {
         return this;
     }
     
-    public CarBuilder withPassengers(Passenger passenger) {
-        this.passengers.add(passenger)
+    public CarBuilder withEngine(Engine engine) {
+        this.engine = engine;
         return this;
     }
     
-    public CarBuilder withEngine(Engine engine) {
-        this.engine = engine;
+    public CarBuilder withPassengers(Passenger passenger) {
+        this.passengers.add(passenger)
         return this;
     }
     
@@ -169,10 +169,14 @@ Your whole test battery uses this same `Bertha` car, an old model. The problem l
 
 So let me introduce you to...[Faker](https://github.com/faker-ruby/faker). This beauty lets you randomize your tests and this serves the purpose of finding out some flaky tests.
 
+********* TALK ABOUT MAGIC NUMBER FOR 1990
+
 Since you already use a Generator for your `Car` attributes, it'll be a breeze to implement it!
 
 ```java
 public class CarGenerator {
+    private final Year MINIMUM_YEAR = 1900;
+    private final Year MAXIMUM_YEAR = 2022;
     private CarGenerator() {}
     
     public static createEngine() {
@@ -193,9 +197,17 @@ public class CarGenerator {
     }
     
     public static Year createYear() {
-        return new Year(Faker.instance().number().numberBetween(1900, 2022);
+        return new Year(Faker.instance().number().numberBetween(MINIMUM_YEAR, MAXIMUM_YEAR);
     }
 }
 ```
 
 So there you go! You now have a random car with the added benefit that on the day that any of your building blocks need changing, you will only have to update ONE line of code instead of creating a Pull request with 1000+ lines because "it is a refactor".
+
+## Conclusion
+
+In the end, we've accomplished our goal: reading our test is that much easier. To top it all off, we can now easily change the way we instantiate the object we're testing, change its contructor signature and we won't have to refactor our whole code base AND our tests and randomized to help us catch flaky tests...
+
+If you've made it this far, I want to thank you for reading and I hope I've helped you cleaning up those tests so that it is now easier for you and your team to keep them that way! 😌
+
+Special thanks to:
