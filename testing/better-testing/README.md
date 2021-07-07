@@ -2,6 +2,8 @@
 
 <img src="https://github.com/olgam4/articles/blob/main/testing/better-testing/thought-catalog-mmWqrsjZ4Lw-unsplash.jpg " width="100%" alt="It seems way more relaxing to read this than to read some tests I wrote two years ago whilst learning TDD in uni.">
 
+https://github.com/olgam4/articles/blob/main/testing/better-testing/910Uj-uTAcL._SX600_.jpg
+
 Have you ever heard that tests are supposed to "pilot your development"; you should think about your desired outcome, make sure your new functionality will work as intended and *only* then are you going to implement it. That's what *TDD* is supposed to be.
 
 Depending upon context, you’ll have your code interacting with something. Since your test should only be asserting one functionality is working, you don’t want your test to fail because of some context which has changed. If you’ve heard about the “Given When Then” strategy to testing, then you’ll know that our Given is the current state of our application. Sometimes, this boiler is incredibly tedious and different with every test you’re encountering.
@@ -47,6 +49,8 @@ Some would say that taking this setup into a private function in your test class
 I hear you crying: yes but it is perfectly okay to have different given states depending on what you want to test 🥲  I agree: what isn’t okay is that in four months, no one will want to read your `Given` and your test will be basically rendered useless, affecting the trust you had in it. 
 
 ## The Magic Pattern
+
+<img src="https://github.com/olgam4/articles/blob/main/testing/better-testing/910Uj-uTAcL._SX600_.jpg" width="500" alt="Rescue Heroes to the Rescue">
 
 Here they come to the rescue: `Builders`. Forget the past, finished are those times you had to know which parameter you had to put in first. Now, your `Given` is quickly read and reads like a story... But how?
 
