@@ -175,13 +175,17 @@ public class CarBuilder {
 }
 ```
 
+### A Case for the Generator
+
+Let's address the elephant in the room: most people will say that `Generators` are overkill. Sometimes, they are: don't just use something you found on the Internet without thinking it through first. `Generators` fall into the category of `Creational Patterns`. As for most of them, they help us *create* something we need without the hassle it generally comes with, with the added benefit to inject some `Mocks` down the line, especially in *TDD*. Why use them and not simply add constants directly in the `Builder`? Well simply put, we found ourselves having complex `Value Objects` needed to be instantiated and lots of lines of complicated code before you even could read the class. Moving it to `Generators` let us distinguish between different responsabilities and unclout our `Builders`. Then, `Generators` were simple "factories" which we used in our `Builders` to alleviate some *setup*, just like in our tests.
+
 Now, you have a way to generate your whole car easily and change its attributes to drive your test. But a problem clearly remains...
 
 ## Isn't it an anti-pattern?
 
 Your whole test battery uses this exact same `Bertha` car, an old model. The problem lies exactly there. We've created some magic value which every test depends on: one major point of failure in which we had put all our faith in...Normally, every test would be keen to this. You think you’re safe, you’ve thought of every possible detail...But are you, really? What if in production, some attribute combination breaks the price? It has happened to me and we were flabbergasted to see it happen. Our boss wasn't be happy about it, especially since it could have been easily avoided. How you ask?
 
-So let me introduce you to...[Faker](https://github.com/faker-ruby/faker) 🎉 This beauty lets you randomize your tests which then serves the purpose of finding out some flaky tests and discovering cases you wouldn't have imagined could happen.
+So let me introduce you to...[Faker](https://github.com/faker-ruby/faker) 🎉 This beauty lets you randomize your tests which then serves the purpose of finding out some tests may have been badly designed and discovering edge cases you wouldn't have imagined could happen. Yes, it does make your tests "flaky", but it helps you catch bad design before it creeps up on you. Also, reproductibility is of the most importance when testing. Therefore, you should always seed your randomness and log it somewhere in order to properly debug later. Don't forget to change those seeds though!
 
 First of all, our previous test had a big flaw: a putrid magic number. As some of you may have noted, we used `1990` for the build year of our car. Every single test will have a thirty-something years old car, which may become a problem down the line. What if I forgot something? I know I always do. Well randomizing this kind of thing will definitely help our noble cause, and run your unit tests more than once. Simply add two constants for the minimum and maximum years and pick a random number in this range!
 
@@ -222,7 +226,7 @@ As I said earlier, it is now a great idea to run your tests more than one. If yo
 
 ## Bravo! You did it ✨🥳
 
-In the end, we've accomplished our main quest: reading our test is now that much easier. To top it all off, we can now easily change the way we instantiate the object we're testing, change its contructor signature and we won't have to refactor our whole code base. Also, our tests are now randomized and may help us catch flaky tests...If you still are not convinced, let me share with you a horrible example.
+In the end, we've accomplished our main quest: reading our test is now that much easier. To top it all off, we can now easily change the way we instantiate the object we're testing, change its constructor signature and we won't have to refactor our whole code base. Also, our tests are now randomized and will help us find unheard of edge cases...If you still are not convinced, let me share with you a horrible example.
 
 ``` java
 class UglyQuoteTest {
@@ -258,7 +262,10 @@ class BeautifulQuoteTest {
 }
 ```
 
-We could imagine that the `QuoteBuilder` uses `Generators` to randomize its setting, but you get the point! Doing it this way lets our team put more trust in our tests because they are simple to understand and to implement. If we need to change something, it will be in exactly one spot and we won't have to change our entire application. If you've made it this far, I want to thank you for reading and I hope I've helped you cleaning up those tests so that it is now easier for you and your team to keep them that way! 😌
+We could imagine that the `QuoteBuilder` uses `Generators` to randomize its setting, but you get the point! Doing it this way lets our team put more trust in our tests because they are simple to understand and to implement. If we need to change something, it will be in exactly one spot and we won't have to change our entire application. Note that the `Builder` pattern would be of great use elsewhere in your code: instantiating objects is somewhat crucial in `OOP`, so with that new tool in your toolbox, have fun coding! If you've made it this far, I want to thank you for reading and I hope I've helped you cleaning up those tests so that it is now easier for you and your team to keep them that way! 😌
+
+Some of you may have feel some discomfort while reading the last test. Why return the price? Only to be sure it was called with it? Isn't that... bad? Also, wouldn’t the test fail since it isn’t the same object? You caught me. If you want to read more, stay tuned for my next article which will tackle how I like to use `Mockito Matchers` for testing!
 
 Special thanks to:
 [Rescue Heroes on Amazon Prime](https://www.amazon.com/Rescue-Heroes-Season-1-US/dp/B01MYWOO25)
+[Unsplash](https://unsplash.com/)
