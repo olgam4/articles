@@ -177,7 +177,7 @@ public class CarBuilder {
 
 ### A Case for the Generator
 
-Let's address the elephant in the room: most people will say that `Generators` are overkill. Sometimes, they are: don't just use something you found on the Internet without thinking it through first. `Generators` fall into the category of `Creational Patterns`. As for most of them, they help us *create* something we need without the hassle it generally comes with, with the added benefit to inject some `Mocks` down the line, especially in *TDD*. Why use them and not simply add constants directly in the `Builder`? Well simply put, we found ourselves having complex `Value Objects` needed to be instantiated and lots of lines of complicated code before you even could read the class. Moving it to `Generators` let us distinguish between different responsabilities and unclout our `Builders`. Then, `Generators` were simple "factories" which we used in our `Builders` to alleviate some *setup*, just like in our tests.
+Let's address the elephant in the room: most people will say that `Generators` are overkill. Sometimes, they are: don't just use something you found on the Internet without thinking it through first. `Generators` fall into the category of `Creational Patterns`. As for most of them, they help us *create* something we need without the hassle it generally comes with, with the added benefit to inject some `Mocks` down the line, especially in *TDD*. Why use them and not simply add constants directly in the `Builder`? Well simply put, we found ourselves having complex `Value Objects` needed to be instantiated and lots of lines of complicated code before you even could read the class. Moving it to `Generators` let us distinguish between different responsibilities and unclog our `Builders`. Then, `Generators` acted as simple "factories" which we used in our `Builders` to alleviate some *setup*, just like in our tests.
 
 Now, you have a way to generate your whole car easily and change its attributes to drive your test. But a problem clearly remains...
 
@@ -268,4 +268,3 @@ Some of you may have feel some discomfort while reading the last test. Why retur
 
 Special thanks to:
 [Rescue Heroes on Amazon Prime](https://www.amazon.com/Rescue-Heroes-Season-1-US/dp/B01MYWOO25)
-[Unsplash](https://unsplash.com/)
