@@ -6,7 +6,7 @@ Have you ever heard that tests are supposed to "drive your development" (thus th
 
 More often than not, your code will be interacting with something else, whether it be an API, some underlying techno or something entirely different. Since your test should only be asserting that the one functionality your working on is behaving, you don’t want your test to fail because of some exterior context which has changed, or more to the point: if the context hasn't changed, but its implementation has. If you’ve heard about the “Given When Then” strategy to testing, then you’ll know that our `Given` is the current state of our application. Sometimes, this becomes a boiler which is incredibly tedious and is bound to be different for almost every test along the way.
 
-#### Don't forget that this article is highly opinionated and don't be shy to comment to enhance everyone's knowledge. With that out of the way... let's begin!
+> Don't forget that this article is highly opinionated and don't be shy to comment to enhance everyone's knowledge. With that out of the way... let's begin!
 
 ## Toyato Car Tests
 
@@ -47,7 +47,7 @@ Some would say that taking this setup into a private function in your test class
 
 I hear you crying: yes but it is perfectly okay to have different given states depending on what you want to test 🥲  I agree: what isn’t okay is that in four months, no one will want to read your `Given` and your test will basically be rendered useless, affecting the trust you had in your application your ability to improve upon it. 
 
-## The Magic Pattern
+### The Magic Pattern
 
 <img src="https://github.com/olgam4/articles/blob/main/testing/better-testing/910Uj-uTAcL._SX600_.jpg" width="500" alt="Rescue Heroes to the Rescue">
 
@@ -115,7 +115,7 @@ In this example, the building of a car takes seconds to read and understand beca
 
 Some might ask why do this. Doesn't it seem over-designed? Maybe. If you find yourself refactoring tests over and over again just because you now have a new dependacy which is passed through the constructor, well you now have only one single line to change, instead of all of these. Also, your `@Setup` should prepare your tests, but you shouldn't have to go back and forth between them, especially not when you have to copy/paste the entire thing in all those tests which aren't exactly like the happy path. Your setup is easy to manage and says exactly what it has to say. You could change `.aCar()` to `.aDefaultCar()`, but more often than not, `Builder` Pattern already means that.
 
-## What's next?
+### What's next?
 
 "Oh my, nothing is perfect", says my teacher as they try to explain some complex algorithm. Unfortunately, the Heroes also aren't perfect. When you've used this pattern long enough, you will realize that it is now your `Builder` who knows way too much and creates everything itself. The problem is that if someday, you change how `Engine` works because you learnt that you had to use composition over inheritance... Then you have to change every `new` statement in your code to use this: even in your tests! That refactor won't be fun...(Seems like a trend, isn't it?)
 
@@ -175,13 +175,13 @@ public class CarBuilder {
 }
 ```
 
-### A Case for the Generator
+#### A Case for the Generator
 
 Let's address the elephant in the room: most people will say that `Generators` are overkill. Sometimes, they are: don't just use something you found on the Internet without thinking it through first. `Generators` fall into the category of `Creational Patterns`. As for most of them, they help us *create* something we need without the hassle it generally comes with, with the added benefit to inject some `Mocks` down the line, especially in *TDD*. Why use them and not simply add constants directly in the `Builder`? Well simply put, we found ourselves having complex `Value Objects` needed to be instantiated and lots of lines of complicated code before you even could read the class. Moving it to `Generators` let us distinguish between different responsibilities and unclog our `Builders`. Then, `Generators` acted as simple "factories" which we used in our `Builders` to alleviate some *setup*, just like in our tests.
 
 Now, you have a way to generate your whole car easily and change its attributes to drive your test. But a problem clearly remains...
 
-## Isn't it an anti-pattern?
+### Isn't it an anti-pattern?
 
 Your whole test battery uses this exact same `Bertha` car, an old model. The problem lies exactly there. We've created some magic value which every test depends on: one major point of failure in which we had put all our faith in...Normally, every test would be keen to this. You think you’re safe, you’ve thought of every possible detail...But are you, really? What if in production, some attribute combination breaks the price? It has happened to me and we were flabbergasted to see it happen. Our boss wasn't be happy about it, especially since it could have been easily avoided. How you ask?
 
@@ -272,3 +272,4 @@ Some of you may have felt some discomfort whilst reading the last test. Why retu
 
 Special thanks to:
 [Rescue Heroes on Amazon Prime](https://www.amazon.com/Rescue-Heroes-Season-1-US/dp/B01MYWOO25)
+
