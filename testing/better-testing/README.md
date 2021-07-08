@@ -266,7 +266,7 @@ We could imagine that the `QuoteBuilder` uses `Generators` to randomize its sett
 
 ---
 
-Some of you may have feel some discomfort while reading the last test. Why return the price? Only to be sure it was called with it? Isn't that... bad? Also, wouldn’t the test fail since it isn’t the same object? You caught me. If you want to read more, stay tuned for my next article which will tackle how I like to use `Mockito Matchers` for testing!
+Some of you may have felt some discomfort whilst reading the last test. Why return the price? Only to be sure it was called with it? Isn't that... bad? Also, wouldn’t the test fail since it isn’t the same object? You caught me. If you want to read more, stay tuned for my next article which will tackle how I like to use `Mockito Matchers` for testing!
 
 ---
 
