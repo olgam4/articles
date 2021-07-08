@@ -264,7 +264,11 @@ class BeautifulQuoteTest {
 
 We could imagine that the `QuoteBuilder` uses `Generators` to randomize its setting, but you get the point! Doing it this way lets our team put more trust in our tests because they are simple to understand and to implement. If we need to change something, it will be in exactly one spot and we won't have to change our entire application. Note that the `Builder` pattern would be of great use elsewhere in your code: instantiating objects is somewhat crucial in `OOP`, so with that new tool in your toolbox, have fun coding! If you've made it this far, I want to thank you for reading and I hope I've helped you cleaning up those tests so that it is now easier for you and your team to keep them that way! 😌
 
+---
+
 Some of you may have feel some discomfort while reading the last test. Why return the price? Only to be sure it was called with it? Isn't that... bad? Also, wouldn’t the test fail since it isn’t the same object? You caught me. If you want to read more, stay tuned for my next article which will tackle how I like to use `Mockito Matchers` for testing!
+
+---
 
 Special thanks to:
 [Rescue Heroes on Amazon Prime](https://www.amazon.com/Rescue-Heroes-Season-1-US/dp/B01MYWOO25)
