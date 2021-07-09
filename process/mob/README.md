@@ -17,16 +17,19 @@ I saw some people comparing it to Piano Duos and I liked the idea. Whilst not en
 There are a lot of reasons why it works. First, let's gather some facts, shall we?
 
 > An an online survey of pair programmers, 96% of them stated that they enjoyed their work more than when they programmed alone.
+>
 > Additionally, 95% of the surveyed programmers stated that they were more confident in their solutions when they pair programmed.
+>
 > Pairs spend about 15% more time on programs than individuals.
+>
 > However, the resulting code has about 15% fewer defects.
 - Rickard Dahlstrom on [Raygun](https://raygun.com/blog/how-good-is-pair-programming-really/)
 
-<img src="https://github.com/olgam4/articles/blob/main/process/mob/SRY_UVS_318-001.jpeg" />
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/driver_navigator.png" />
 
 The afore-mentioned Piano duo is also described as the Driver-Navigator metaphor. One person is focused on the "What" and the "How": the Driver. The other is focused on the same "What", but on the "Why" instead: the Navigator. As some say, two heads are better than one. It might have something to do with the pressure to perform or with better splitting the tasks, but it definitely works. Using the ping-pong method, you will work as both the Driver and the Navigator, letting you reset your focus every few minutes.
 
-<img src="https://github.com/olgam4/articles/blob/main/process/mob/driver_navigator.png" />
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/dn5ax0jtfc551.jpeg" />
 
 It also has been used a recruiting-tool. Why? Because it really is a great tool! You can assert what your interviewee thinks in real time and sometimes, even on a real life project. And then, once you've recruited the person, you can even pair people with different skill sets and skill levels to enhance your team productivity and comprehension. How amazing is that?
 
