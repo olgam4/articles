@@ -37,7 +37,7 @@ It also has been used a recruiting-tool. Why? Because it really is a great tool!
 
 So why am I saying that Pair Programming is dead? Well, first, to catch your attention, but also because I do think we found an upgrade. A real problem with Software Engineering usual Processes is that it is way to easy to split tasks and accumulate Work In Progress (WIP). At first, Pair Programming seemed to solve the problem, but it only did solve some of it. Let's imagine having a team of six people working on a project: if they all work on something different, the WIP is enormous. More often than not, it will mean a merging hell once every one is done. Usually, it is recommended not to diverge too far from the `master` branch. Some will say that it shouldn't be further than `1 Day Work`. So let's say you do 🍐. You've cut your `WIP` to half. But you still have the same dangers as before. One duo may steer away for too long, whilst the other two are shouting at each other because they've merged something which broke everything...
 
-<img src="https://github.com/olgam4/articles/blob/main/process/mob/external-room-discord_2x_yoi7kh.jpeg" width="400" />
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/white-field-photo-ziyhUwkiDnc-unsplash.jpg" width="400" />
 
 ## So what should i do?
 
@@ -80,7 +80,7 @@ There are a lot of tools which were born last year. This one in particular is qu
 Visual Studio Code has taken the dev world by storm. Customizable, light and powerful, a lot of people have switched to using it, especially frontend developpers. Some years ago, it added a nice feature: Live Sharing. It lets people connect to your machine remotely and use their Code with yours. You can share buffers, you use your own shortcuts and just like Google Docs, it shows you your friends cursor. Hop on a call and it works wonders. One drawback: back when I used this two years ago, it was sometimes hit or miss. I don't know if Microsoft has upgraded their tool, but I'm sure they did. Sometimes, saving could be difficult and other things like that, but I encourage you to try it out.
 
 #### [Discord](https://discord.com) with good ole' commit and push.
-<img src="https://github.com/olgam4/articles/blob/main/process/mob/white-field-photo-ziyhUwkiDnc-unsplash.jpg" />
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/external-room-discord_2x_yoi7kh.jpeg" />
 
 Personnaly, that is my favourite one to use. Host your server, split your company into rooms and everyone can hop around at will. Share your screens, turn on your webcams and call-in a Music Bot. Discord has a pretty chill vibe too, so you feel less stressed, in my experience. You can also brag to others that you use Vim and don't need to have everyone use the same IDE, which is a total plus. Once you're done with your turn, commit and push a `wip commit` and let someone continue by simpling pulling your work.
 
