@@ -6,7 +6,7 @@ Lately, there definitely a trend of pair programming: just peeking at the most r
 
 ## What is Pair Prog
 
-<img src="https://github.com/olgam4/articles/blob/main/process/mob/SRY_UVS_318-001.jpeg" />
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/SRY_UVS_318-001.jpeg" width="400" />
 
 Commonly called 🍐 programming, this technique simply consists of working as a pair on a feature. Usually, one person is focused on the system, the project as a whole and how to implement the latter, whilst the other is typing and thinking about details, the lines if you may. It often is a good idea to switch roles: some people only swear by [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) and will recommend switching every 25-30 minutes, but that would deserve an entire article of its own.
 
@@ -25,7 +25,7 @@ There are a lot of reasons why it works. First, let's gather some facts, shall w
 > However, the resulting code has about 15% fewer defects.
 - Rickard Dahlstrom on [Raygun](https://raygun.com/blog/how-good-is-pair-programming-really/)
 
-<img src="https://github.com/olgam4/articles/blob/main/process/mob/driver_navigator.png" />
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/driver_navigator.png" width="400" />
 
 The afore-mentioned Piano duo is also described as the Driver-Navigator metaphor. One person is focused on the "What" and the "How": the Driver. The other is focused on the same "What", but on the "Why" instead: the Navigator. As some say, two heads are better than one. It might have something to do with the pressure to perform or with better splitting the tasks, but it definitely works. Using the ping-pong method, you will work as both the Driver and the Navigator, letting you reset your focus every few minutes.
 
@@ -37,7 +37,7 @@ It also has been used a recruiting-tool. Why? Because it really is a great tool!
 
 So why am I saying that Pair Programming is dead? Well, first, to catch your attention, but also because I do think we found an upgrade. A real problem with Software Engineering usual Processes is that it is way to easy to split tasks and accumulate Work In Progress (WIP). At first, Pair Programming seemed to solve the problem, but it only did solve some of it. Let's imagine having a team of six people working on a project: if they all work on something different, the WIP is enormous. More often than not, it will mean a merging hell once every one is done. Usually, it is recommended not to diverge too far from the `master` branch. Some will say that it shouldn't be further than `1 Day Work`. So let's say you do 🍐. You've cut your `WIP` to half. But you still have the same dangers as before. One duo may steer away for too long, whilst the other two are shouting at each other because they've merged something which broke everything...
 
-<img src="https://github.com/olgam4/articles/blob/main/process/mob/white-field-photo-ziyhUwkiDnc-unsplash.jpg" />
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/white-field-photo-ziyhUwkiDnc-unsplash.jpg" width="400" />
 
 ## So what should i do?
 
