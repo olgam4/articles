@@ -37,7 +37,7 @@ It also has been used a recruiting-tool. Why? Because it really is a great tool!
 
 So why am I saying that Pair Programming is dead? Well, first, to catch your attention, but also because I do think we found an upgrade. A real problem with Software Engineering usual Processes is that it is way to easy to split tasks and accumulate Work In Progress (WIP). At first, Pair Programming seemed to solve the problem, but it only did solve some of it. Let's imagine having a team of six people working on a project: if they all work on something different, the WIP is enormous. More often than not, it will mean a merging hell once every one is done. Usually, it is recommended not to diverge too far from the `master` branch. Some will say that it shouldn't be further than `1 Day Work`. So let's say you do 🍐. You've cut your `WIP` to half. But you still have the same dangers as before. One duo may steer away for too long, whilst the other two are shouting at each other because they've merged something which broke everything...
 
-<img src="https://github.com/olgam4/articles/blob/main/process/mob/white-field-photo-ziyhUwkiDnc-unsplash.jpg" width="400" />
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/external-room-discord_2x_yoi7kh.jpeg" width="400" />
 
 ## So what should i do?
 
