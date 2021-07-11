@@ -29,7 +29,7 @@ There are a lot of reasons why it works. First, let's gather some facts, shall w
 
 The afore-mentioned Piano duo is also described as the Driver-Navigator metaphor. One person is focused on the "What" and the "How": the Driver. The other is focused on the same "What", but on the "Why" instead: the Navigator. As some say, two heads are better than one. It might have something to do with the pressure to perform or with better splitting the tasks, but it definitely works. Using the ping-pong method, you will work as both the Driver and the Navigator, letting you reset your focus every few minutes.
 
-<img src="https://github.com/olgam4/articles/blob/main/process/mob/dn5ax0jtfc551.jpeg" />
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/dn5ax0jtfc551.jpeg" width="400" />
 
 It also has been used a recruiting-tool. Why? Because it really is a great tool! You can assert what your interviewee thinks in real time and sometimes, even on a real life project. And then, once you've recruited the person, you can even pair people with different skill sets and skill levels to enhance your team productivity and comprehension. How amazing is that?
 
@@ -45,9 +45,15 @@ Well...Why not work as a team, but for real?
 
 MOBSTER
 
+### How do I do it
+
 ### Why should I?
 
-Walking skeleton
+#### Walking Skeletons
+
+At the beginning of every project, your team needs to understand the goal of their application. They need to settle down on a solution and find a way to bring a `MVP`. Splitting this job is somewhat odd: there is nothing written, so you're bound to fall into merging hell. Instead, why not work together? Juice up your brains and define a walking skeleton for your project. Once it is walking, you can add muscles, fat and details to your project. This can be easily split up, but putting a skeleton together should always be a team effort.
+
+What is it?
 
 ### Its downfalls
 
@@ -57,15 +63,32 @@ My boss says our productivity is falling. Explain that you now have a direct flo
 
 ### Its perks
 
+As said earlier, your `WIP` is stripped down to its minimum.
+
 ### During a pandemic
 
 I don't know if you've heard, but the last year has been tainted by a pandemic. Before, you could plug yourself to a tv and have your team gather around it in order to work, but now, how can you do it? Well as most things, nothing beats face-to-face, but there are some wonderful tools to your disposition.
 
-[Remote Mob Programming](https://www.remotemobprogramming.org/)
+#### [Remote Mob Programming](https://www.remotemobprogramming.org/)
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/remotemob_header_screen_grau.png" />
 
-[Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+There are a lot of tools which were born last year. This one in particular is quite interesting. It adds timers, codesharing, webcams, everything in a single app. If you want a quick solution with people who aren't especially versed in tech, it could be a perfect fit. Personnaly, I have never used it, but I've only heard praise about it. There are also some other alternatives which strive to do the same thing... But let's talk about some other ones which I prefer.
 
-[Discord](https://discord.com) with good ole' commit and push.
+#### [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/vs-code-ls-session.png" />
+
+Visual Studio Code has taken the dev world by storm. Customizable, light and powerful, a lot of people have switched to using it, especially frontend developpers. Some years ago, it added a nice feature: Live Sharing. It lets people connect to your machine remotely and use their Code with yours. You can share buffers, you use your own shortcuts and just like Google Docs, it shows you your friends cursor. Hop on a call and it works wonders. One drawback: back when I used this two years ago, it was sometimes hit or miss. I don't know if Microsoft has upgraded their tool, but I'm sure they did. Sometimes, saving could be difficult and other things like that, but I encourage you to try it out.
+
+#### [Discord](https://discord.com) with good ole' commit and push.
+<img src="https://github.com/olgam4/articles/blob/main/process/mob/white-field-photo-ziyhUwkiDnc-unsplash.jpg" />
+
+Personnaly, that is my favourite one to use. Host your server, split your company into rooms and everyone can hop around at will. Share your screens, turn on your webcams and call-in a Music Bot. Discord has a pretty chill vibe too, so you feel less stressed, in my experience. You can also brag to others that you use Vim and don't need to have everyone use the same IDE, which is a total plus. Once you're done with your turn, commit and push a `wip commit` and let someone continue by simpling pulling your work.
+
+This is definitely my favourite solution out there because it is the most versatile. You might need to add plugins to your Discord, but since it lets you do it with bots and whatnot... Well why not?
+
+## So are you convinced?
+
+In the beginning, I told you that pair programming is dead. I think it has evolved: sometimes, doing it might be the solution, but more often that not, mob programming beats it in most ways. Try it with your team. In your next meeting, instead of "thinking and planning what you will be doing in the next few days"... Just share your screen and mob!
 
 ---
 
