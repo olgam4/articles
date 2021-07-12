@@ -10,7 +10,7 @@ Lately, there definitely has been a trend of pair programming popping everywhere
 
 First off, let's preface this by talking about the Holy Grail that was Pair Programming back then. Commonly called Pear (🍐) Programming, this technique simply consists of working as a pair on a feature. Usually, one person is focused on the system, the project as a whole and how to implement the latter, whilst the other is typing and thinking about details, the lines if you may. It often is a good idea to switch roles: some people only swear by [Pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) and will recommend switching every 25-30 minutes, but that would deserve an entire article of its own.
 
-I saw some people comparing it to Piano Duos and I liked the idea. Whilst not entirely accurate, it still projects the idea that someone might play the melody and the other could be helping with rythm and bass. Compared to a band, the Piano exists as a single unity and the pair both work on it.
+I saw some people comparing it to Piano Duos and I liked the idea. Whilst not entirely accurate, it still projects the idea that someone might play the melody and the other could be helping with rhythm and chords. Compared to a band, the Piano exists as a single unity and the pair both work on it.
 
 ### Why It Works
 
@@ -34,7 +34,7 @@ There are a lot of reasons why it works. First, let's gather some facts, shall w
 
 The aforementioned Piano duo is described as the Driver-Navigator metaphor. One person is focused on the "What" and the "How": the Driver. The other is focused on the same "What", but on the "Why" instead: the Navigator. As some say, two heads are better than one. It might have something to do with the pressure to perform or with better splitting the tasks, but it definitely works. Using the ping-pong method, you will work as both the Driver and the Navigator, letting you reset your focus every few minutes.
 
-This metaphor is keen to that of driving a car. One person has the map: they focus on long term goals, they focus on the whole road and their itinerary. One person has the driving wheel: they focus on details such as not driving off the road and listen to directions one by one, they focus in the "now". In 🍐, it is the same thing. The Driver implements the now and the Navigator elaborates an itinerary.
+This metaphor is keen to that of driving a car. One person has the map: they focus on long term goals, they focus on the whole road and their itinerary. One person has the driving wheel: they focus on details such as not driving off the road and listen to directions one by one, they focus on the "now". In 🍐, it is the same thing. The Driver implements the now and the Navigator elaborates an itinerary.
 
 <img src="https://github.com/olgam4/articles/blob/main/process/mob/dn5ax0jtfc551.jpeg?raw=true" width="400" />
 
@@ -46,7 +46,7 @@ So why am I saying that Pair Programming is dead? Well, first, to catch your att
 Let's imagine having a team of six people working on a project: if they all work on something different, the WIP is enormous. More often than not, it will mean a merging hell once everyone is done. Usually, it is recommended not to diverge too far from the `master` branch. Some will say that it shouldn't be further than `1 Day Work`. So let's say you do 🍐. You've cut your `WIP` to half. (Six people working on six features vs of three pairs working on three.) 
 But you still have the same dangers as before. One duo may steer away for too long, whilst the other two duos are shouting at each other because one duo has merged something which broke everything the other 🍐 had been working on...
 
-Another problem which is sometimes easily fixed, is that duos tend to form and last. Alice and Bianca have been working together for six months now, so do Caroline and Daphne. Problem is that A and B are way better at their job. C and D do work better together, but never as well as the other two. You could switch around the people who work together, but that requires some team buidling and management you maybe would not have thought of beforehand.
+Another problem which is sometimes easily fixed, is that duos tend to form and last. Alice and Bianca have been working together for six months now, so do Caroline and Daphne. Problem is that A and B are way better at their job. C and D do work better together, but never as well as the other two. You could switch around the people who work together, but that requires some team building and management you maybe would not have thought of beforehand.
 
 <img src="https://github.com/olgam4/articles/blob/main/process/mob/white-field-photo-ziyhUwkiDnc-unsplash.jpg?raw=true" width="400" />
 
@@ -72,9 +72,9 @@ At the beginning of every project, your team needs to understand the goal of the
 
 It is known that code reviews don't always add as much value as you think they do. Well yes, you do have incredibly good eyesight: fixing typos right and left like there's no tomorrow... But if the Pull Request you're working on is 1000+ lines long...Are you really catching that sneaky security problem at like `654`? If you are, don't be shy to send me your resume. Some solutions to that problem is to limit `PR` to some line maximum, splitting them into meaningful commits et cetera. Another awesome solution is to have everyone reading the code as it is written. Every developer is familiar with it because, well, they've worked on it, and you can still use the solutions talked about earlier. Change Driver every Pomodoro-timelapse. Split your work into simple commits. Do all of it, but as a team.
 
-In the end, you don’t have to integrate and merge your work, because it has been merged at the same time that it has been written. Everybody’s work is in there, so you don’t need to review and learn about what your coworker has done: you’ve done it too. Double-checking yourselves may be a good idea, but test pipelines are made for that. So be gone are the hours and hours of tedious code reviews! 
+In the end, you don’t have to integrate and merge your work because it has been merged at the same time that it has been written. Everybody’s work is in there, so you don’t need to review and learn about what your coworker has done: you’ve done it too. Double-checking yourselves may be a good idea, but test pipelines are made for that. So be gone are the hours and hours of tedious code reviews! 
 
-### Its downfalls
+### Its Downfalls
 
 No solution is perfect, so let's talk about some of the problems people working with it have talked about or some of the things you might think will be a problem for you and your team.
 
@@ -119,7 +119,9 @@ This is definitely my favourite solution out there because it is the most versat
 In the beginning, I told you that pair programming is dead. I think it has evolved: sometimes, doing it might be the solution, but more often that not, mob programming beats it in most ways. Try it with your team. In your next meeting, instead of "thinking and planning what you will be doing in the next few days"... Just share your screen and mob!
 
 ---
-TW: mob, it has been used lightheartedly
+
+TW: mob
+
 ---
 
 *Special thanks to:*
