@@ -100,13 +100,14 @@ I don't know if you've heard, but the last year has been tainted by a pandemic. 
 <img src="https://github.com/olgam4/articles/blob/main/process/mob/remotemob_header_screen_grau.png?raw=true" />
 
 There are a lot of tools which were born last year. This one puts together a lot of tricks and tools which they use at work. They give timers, codesharing tools, webcams you should buy, everything in a single place. If you want a quick solution with people who aren't especially versed in tech, it could be a perfect fit.
+Here are some tools which I recommend!
 
-#### [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
+##### [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 <img src="https://github.com/olgam4/articles/blob/main/process/mob/vs-code-ls-session.png?raw=true" />
 
 Visual Studio Code has taken the dev world by storm. Customizable, light and powerful, a lot of people have switched to using it, especially frontend developers. Some years ago, it added a nice feature: Live Sharing. It lets people connect to your machine remotely and use their Code with yours. You can share buffers, you use your own shortcuts and just like Google Docs, it shows you your friends cursor. Hop on a call and it works wonders. One drawback: back when I used this two years ago, it was sometimes hit or miss. I know that with the pandemic, they have upgraded their tool. Sometimes, saving could prove to be difficult, so make sure to save your code, but other than that, do give it a try!.
 
-#### [Discord](https://discord.com) with good ole' commit and push.
+##### [Discord](https://discord.com) with good ole' commit and push.
 <img src="https://github.com/olgam4/articles/blob/main/process/mob/external-room-discord_2x_yoi7kh.jpeg?raw=true" />
 
 Personally, that is my favourite one to use. Host your server, split your company into rooms and everyone can hop around at will. Share your screens, turn on your webcams and call-in a Music Bot. Discord has a pretty chill vibe too, so you feel less stressed, in my experience. You can also brag to others that you use Vim and don't need to have everyone use the same IDE, which is a total plus. Once you're done with your turn, commit and push a `wip commit` and let someone continue by simply pulling your work.
