@@ -2,7 +2,7 @@
 
 <img src="https://github.com/olgam4/articles/blob/main/process/mob/4284.jpeg?raw=true" />
 
-Lately, there definitely has been a trend of pair programming popping everywhere: just peeking at the most read articles on Medium last month, and you can't say I'm wrong. It feels weird to me, as if our community is somewhat late to the party. As of right now, our processes have changed and pair programming was becoming cool half a decade ago... So what about now? How can you still be hip in your daily job?
+Lately, there definitely has been a trend of pair programming popping everywhere: just peeking at the most read articles on Medium last month, and you can't say I'm wrong. It feels weird to me, as if our community is somewhat late to the party. As of right now, our processes have evolved: pair programming was becoming cool half a decade ago... So why is it getting traction lately? And what about now? How can you still be hip in your daily job?
 
 ## What is Pair Prog
 
@@ -116,7 +116,7 @@ This is definitely my favourite solution out there because it is the most versat
 
 ## So are you convinced?
 
-In the beginning, I told you that pair programming is dead. I think it has evolved: sometimes, doing it might be the solution, but more often that not, mob programming beats it in most ways. Try it with your team. In your next meeting, instead of "thinking and planning what you will be doing in the next few days"... Just share your screen and mob!
+In the beginning, I told you that pair programming was dead. I think it has evolved: sometimes, doing it might be the solution, but more often that not, mob programming beats it in every way. I can only suggest that you try it with your team. To start off smoothly, in your next meeting, instead of "thinking and planning what you will be doing in the next few days"... Just share your screen and mob!
 
 ---
 
