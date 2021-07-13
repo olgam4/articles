@@ -4,6 +4,8 @@
 
 Lately, there definitely has been a trend of pair programming popping everywhere: just peeking at the most read articles on Medium last month, and you can't say I'm wrong. It feels weird to me, as if our community is somewhat late to the party. As of right now, our processes have evolved: pair programming was becoming cool half a decade ago... So why is it getting traction lately? And what about now? How can you still be hip in your daily job?
 
+> Don’t forget that this is an opinion and should be taken with a grain of salt. Everything depends upon context: pair programming can work, so does mob programming or solo programming for lack of a better word. This article tries to show that alone, you go faster, but together, we go further.
+
 ## What is Pair Prog
 
 <img src="https://github.com/olgam4/articles/blob/main/process/mob/SRY_UVS_318-001.jpeg?raw=true" width="400" />
