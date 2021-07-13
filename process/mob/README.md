@@ -84,7 +84,10 @@ Some managers might think that the productivity will drastically fall... But wil
 
 This one I thought was funny, so I could not not include it in this article. "Some people might fall asleep." Since you're in the corner of the room whilst everyone else is working, someone might sleep through it. I'm sorry to be the one who tells you this, but if they are sleeping right now, who says that they weren't sleeping when they were alone? Working as a group actually lets you catch "these people". Also, I really hope you don't have to deal with this kind of trouble because it may probably stem from deep problems in your system.
 
-With everything else, it is NOT always a great solution to everything. Please, don't run around using something you found on the internet without planning or thinking about it.
+Someone pointed out that with Pair Programming, you had one person doing all the job while the other one was *iddle*. Now, with mob programming, you had one person coding (and working for realsies) while the other members of your team were *idle*. "Wow, that's great for velocity." Well, actually, there is a metaphor I love for this kind of train of thought and it goes a little bit like this: 9 pregnant women still take 9 months each to have 9 babies. You can't optimize babies to 1 month each, even you put sixteen moms working together... Same goes for mob programming: you're working on a project which WILL take time. Adding people won't solve your problem and you should definitely give mob a try.
+
+Now... as with everything else, it is NOT always a great solution to everything. Please, don't run around using something you found on the internet without planning or thinking about it.
+
 ### Its Perks
 
 With downfalls out there, well let me try to convince you that in fact, Mob Programming is awesome.
