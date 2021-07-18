@@ -24,7 +24,7 @@ What is quick-scope? Well as you can see from the `gif`, it makes your buffer a 
 
 To be honest, `ThePrimagen` is probably the guy I looked up to the most back when I was starting `vim`. He streams himself coding, uses a keyboard-cam to flex his rapidity and is very instructionnal. Obviously, he has coded some `vim` plugins and this one I quite enjoy.
 
-At first, when I switched to `vim`, I missed having the everlasting terminal at the bottom of my screen...And this harpoon only makes it better by giving you four of them! I mapped the plugin to be `,t[qwer]` and it lets me jump to a terminal and let it run in the background whilst I code. It can be very useful for testing, running your application et cetera. You can always use `:!` but this one changes your whole buffer to a terminal, so after you've run something, you can `/` the output which is an awesome feat!
+At first, when I switched to `vim`, I missed having the everlasting terminal at the bottom of my screen...And this harpoon only makes it better by giving you four of them! I mapped the plugin to be `,t[qwer]` and it lets me jump to a terminal and let it run in the background whilst I code. It can be very useful for testing, running your application et cetera. You can always use `:!` to run commands or `:terminal`, but this one comes with the added benefit that background tasks can write to the buffer, so after you've run something, you can come back to it and `/` the output which is an awesome feat!
 
 ## ~ Plugin 'tpope/vim-surround'
 
