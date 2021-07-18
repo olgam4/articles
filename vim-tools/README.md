@@ -14,9 +14,13 @@ The awesome thing I didn't know was that you could find tools to upgrade your `v
 
 ## ~ Plugin 'unblevable/quick-scope'
 
+<img src="https://media.giphy.com/media/CLgTuFvySvV2x0f2xk/giphy.gif" />
+
 What is quick-scope? Well as you can see from the `gif`, it makes your buffer a multicolored happy place. The keen-eyed might have understood how it does it: it highlights the first occurrence of a letter so that you can jump around (or quick-scope) words in a line. Instead of jumping from word to word using `bwe`, you find (`f`) the highlighted letter and jump straight there. Not only does navigating a line become a breeze, you also look very snazzy when people watch you code with all those beautiful colors popping around.
 
 ## ~ Plugin 'ThePrimeagen/harpoon'
+
+<img src="https://media.giphy.com/media/eJGM2EICJerkQo1MMQ/giphy.gif" />
 
 To be honest, `ThePrimagen` is probably the guy I looked up to the most back when I was starting `vim`. He streams himself coding, uses a keyboard-cam to flex his rapidity and is very instructionnal. Obviously, he has coded some `vim` plugins and this one I quite enjoy.
 
@@ -24,15 +28,21 @@ At first, when I switched to `vim`, I missed having the everlasting terminal at 
 
 ## ~ Plugin 'tpope/vim-surround'
 
+<img src="https://media.giphy.com/media/96dIVjELvfety2PGUn/giphy.gif" />
+
 `tpope` has made a lot of `clojure` plugins and this is how I bumped into his work. This `vim-surround` tool lets you... quite simply...surround something! If you need to add parentheses around some argument, highlight some word in `markdown` or comment something...This plugin comes to the rescue! I highly recommend you give it a try, it has helped me numerous times in the past.
 
 ## ~ Plugin 'dbeniamine/cheat.sh-vim'
+
+<img src="https://media.giphy.com/media/JB83OrFyzjtbwbIVjB/giphy.gif" />
 
 Who always remembers every last detail a language has to offer? If you do, bravo. But if you don't: here's an awesome tool which does it for you. Simply hover over some word, press `K` and voilà, it shows you in a new pane how to use that thing in particular.
 
 It is very useful when you read some code: if you don't know that keyword does, just `K`. It supports a lot of languages and tools and can even be navigated without coming from a word and from there, you can search for some functionality and then use it for your purpose...Give it a try!
 
 ## ~ Plugin 'vimwiki/vimwiki'
+
+<img src="https://media.giphy.com/media/hNAlyQDIXH7emPEmS7/giphy.gif" />
 
 The latter was a cheatsheet...This one is a wiki! I mapped mine to `,ww` and with that, I jump straight to a personal wiki. From there, you can link pages, add data, take notes... It has proven to be very useful for taking notes on mappings I was learning in `vim` and some todo I had given myself for my current projects.
 
