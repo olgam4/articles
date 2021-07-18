@@ -1,4 +1,5 @@
 # Five Awesome Tools I Wish I Knew When I First Started My Vim Journey
+<img src="https://github.com/olgam4/articles/blob/main/vim-tools/oliver-schwendener-uWdzlMWijiI-unsplash.jpg?raw=true" width="400" />
 
 Some years ago, I switched jobs and lended with a mentor who only swore by `Dvorak` and `vim`. Although I was not convinced I had the mental space to learn yet another keyboard map, I had heard of `vim` in uni and decided to give it a go. As for any good programmer, I had stumbled upon `vim` when working on servers and got myself stuck in a buffer because I didn't know that in order to quit the thing, I had to use `:q!`...I think it has happened to most of us and instead of admitting myself beaten, I had decided that one day, I would use this editor and never be fooled again.
 
