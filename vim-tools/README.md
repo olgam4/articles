@@ -40,6 +40,8 @@ Who always remembers every last detail a language has to offer? If you do, bravo
 
 It is very useful when you read some code: if you don't know that keyword does, just `K`. It supports a lot of languages and tools and can even be navigated without coming from a word and from there, you can search for some functionality and then use it for your purpose...Give it a try!
 
+> As Gaho pointed out on Reddit, `K` always works in `vim` . It is true, I should have been more clear: what this plugins does is enhance the docs by giving you direct access to [cheat.sh](cheat.sh) in your buffers and lets your search info there directly next to your code, which is awesome ✨
+
 ## ~ Plugin 'vimwiki/vimwiki'
 
 <img src="https://media.giphy.com/media/hNAlyQDIXH7emPEmS7/giphy.gif" />
